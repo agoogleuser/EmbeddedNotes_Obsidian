@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Memory Sections.canvas",
+                "file": "Compiler Canvas.canvas",
                 "viewState": {
-                  "x": -363.1742533470648,
-                  "y": 1069.2583934088566,
-                  "zoom": -1.062016393961456
+                  "x": -353.9604367804563,
+                  "y": 311.0844026070106,
+                  "zoom": -1.3475679160454619
                 }
               }
             }
@@ -115,13 +115,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Memory Sections.canvas",
+                "file": "Compiler Canvas.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Memory Sections.canvas",
+                "file": "Compiler Canvas.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Memory Sections.canvas"
+                "file": "Compiler Canvas.canvas"
               }
             }
           }
@@ -163,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,15 +177,15 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "eae0d8403f036906",
+  "active": "f5eb1c70460195a3",
   "lastOpenFiles": [
+    "Memory Sections.canvas",
     "README.md",
     "New Text Document.txt",
     "LICENSE",
     "LICENSE.txt",
     "Compiler Canvas.canvas",
     "Linker/Linker.md",
-    "Memory Sections.canvas",
     "Compiler/Symbol Table Generator.md",
     "Compiler/Optimizer.md",
     "Compiler/Target Generator.md",
