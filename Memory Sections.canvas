@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"type":"text","text":"# Linker\nIn any hex file that will be burned into a microcontroller, the memory is divided into multiple Sections\n\nThe Common/ Standard Sections are:\n1.  .bss \n\t\tShort for \"Block Starting Symbol\"\n\t\tIt holds all un uninitialized global and static variables (needed)\n2. .data\n\t\tIt holds all initialised static and global variables (Provided)\n3. .rodata\n\t\tShort for \"Read-Only Data\"\n\t\tAll Constant variables that are defined are stored here.\n1. .text\n\t\tStores the logical code like loop, if conditions, operations, calling of functions, but not the ones that declares or defines a variable.\t \n\nSections are characterised by\n- Name\n- Data Type inside it\n- Size\n- Address Range\n\nThese sections are arranged using the ***Linker Script***\n\n","id":"2475e2001ae43d4c","x":-567,"y":-203,"width":591,"height":1043,"color":"1"},
+		{"id":"837112ac6eeb4de4","x":-567,"y":920,"width":591,"height":720,"type":"text","text":"# Linker Script\nA Script that  Describes the sections in the memory.\nThere is a default sections, and they also can be modified.\n\n```ld\nSECTION\n{\n\tHamada  = .(0x4000)\n\t\n\t.\n\t.\n\t.\n}\nDATA\n\tHamada = {...,...,...,...};\n\t\t// These dots are the type of data that will be saved inside Hamada.\n\t\n\t.\n\t.\n\t.\n}\n```"},
+		{"id":"d01ab95e9b479ec2","x":-1360,"y":1270,"width":591,"height":370,"type":"text","text":"# But Why we divide the memory into section in the first place ?\n"}
+	],
+	"edges":[
+		{"id":"4f2a62658cfee277","fromNode":"2475e2001ae43d4c","fromSide":"bottom","toNode":"837112ac6eeb4de4","toSide":"top"},
+		{"id":"d1c7e50a959fe331","fromNode":"2475e2001ae43d4c","fromSide":"left","toNode":"d01ab95e9b479ec2","toSide":"top"},
+		{"id":"17ee0c6133a4541a","fromNode":"837112ac6eeb4de4","fromSide":"left","toNode":"d01ab95e9b479ec2","toSide":"top"}
+	]
+}

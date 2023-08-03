@@ -1,0 +1,1 @@
+After all the object files and its symbol tables are generated from the source code of the project, The next step is to link all of these files together 

@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"type":"file","file":"PreProcessor/PreProcessing.md","id":"c4aeeddd7163a634","x":-880,"y":-203,"width":800,"height":453},
+		{"type":"file","file":"Compiler/Compiler.md","id":"54d8262a327319cd","x":520,"y":137,"width":740,"height":743},
+		{"type":"file","file":"PreProcessor/Pre-Processing-Directives.md","id":"8edfc6c210df7a37","x":-1440,"y":500,"width":500,"height":760},
+		{"id":"341611b4fae47c5a","x":1860,"y":250,"width":680,"height":370,"type":"file","file":"Assembler/Assembler.md"},
+		{"type":"file","file":"PreProcessor/Pre-Processing Errors.md","id":"f66547a7499b1ab7","x":-600,"y":435,"width":640,"height":460},
+		{"type":"file","file":"Compiler/Tokenizer.md","id":"5b8758f74e96cf44","x":-660,"y":1060,"width":580,"height":640},
+		{"type":"file","file":"Compiler/Temporary Generator.md","id":"bbcadaf31672903f","x":800,"y":1140,"width":600,"height":640},
+		{"type":"file","file":"Compiler/Target Generator.md","id":"00ba25df14d916d3","x":1480,"y":1140,"width":600,"height":480},
+		{"type":"file","file":"Compiler/Optimizer.md","id":"d25ae1a4a2530565","x":2200,"y":1140,"width":560,"height":560,"color":"6"},
+		{"type":"file","file":"Compiler/Symbol Table Generator.md","id":"0c6fe8d2e3fc76bc","x":2880,"y":1070,"width":840,"height":730},
+		{"id":"8f0386cf71325b16","x":-740,"y":-860,"width":600,"height":380,"type":"text","text":"# Intermediate File\nThis is the output of the pre-processing step in the compilation process, where it , in simpler terms, combines the source and header files of the source code (`file.c`, `file.h`) and the output is `file.i`\n\n"},
+		{"id":"cdb1f0aba440d42f","x":-2184,"y":-224,"width":424,"height":304,"type":"text","text":"# Source Files\nWhen writing a project, it will eventually contain a group of `.c` files and a group of `.h` files. These are the logic of the code that will eventually be executed on the target machine.\n"},
+		{"type":"file","file":"Compiler/Syntax Tree.md","id":"60dc6f1ac61d8943","x":40,"y":1100,"width":600,"height":680}
+	],
+	"edges":[
+		{"id":"097f9d7f61b38a46","fromNode":"c4aeeddd7163a634","fromSide":"bottom","toNode":"8edfc6c210df7a37","toSide":"top"},
+		{"id":"599a00aa10488870","fromNode":"c4aeeddd7163a634","fromSide":"bottom","toNode":"f66547a7499b1ab7","toSide":"top"},
+		{"id":"c78a120de2c4710a","fromNode":"c4aeeddd7163a634","fromSide":"right","toNode":"54d8262a327319cd","toSide":"left"},
+		{"id":"ba2843dc9eca6ce8","fromNode":"54d8262a327319cd","fromSide":"bottom","toNode":"5b8758f74e96cf44","toSide":"top"},
+		{"id":"fa875d6459143801","fromNode":"54d8262a327319cd","fromSide":"bottom","toNode":"60dc6f1ac61d8943","toSide":"top"},
+		{"id":"97777eaa8c3942d2","fromNode":"54d8262a327319cd","fromSide":"bottom","toNode":"bbcadaf31672903f","toSide":"top"},
+		{"id":"1867874459073c75","fromNode":"54d8262a327319cd","fromSide":"bottom","toNode":"00ba25df14d916d3","toSide":"top"},
+		{"id":"5737ce5fc6cf7d93","fromNode":"54d8262a327319cd","fromSide":"bottom","toNode":"d25ae1a4a2530565","toSide":"top"},
+		{"id":"b7ea4c38807e94e8","fromNode":"d25ae1a4a2530565","fromSide":"right","toNode":"0c6fe8d2e3fc76bc","toSide":"left"},
+		{"id":"18b32996ab666976","fromNode":"00ba25df14d916d3","fromSide":"right","toNode":"d25ae1a4a2530565","toSide":"left"},
+		{"id":"6fa1c773185ac02d","fromNode":"bbcadaf31672903f","fromSide":"right","toNode":"00ba25df14d916d3","toSide":"left"},
+		{"id":"0652ee551c551728","fromNode":"60dc6f1ac61d8943","fromSide":"right","toNode":"bbcadaf31672903f","toSide":"left"},
+		{"id":"2abee29e7aff0759","fromNode":"5b8758f74e96cf44","fromSide":"right","toNode":"60dc6f1ac61d8943","toSide":"left"},
+		{"id":"14706911ea9b0ae6","fromNode":"0c6fe8d2e3fc76bc","fromSide":"top","toNode":"341611b4fae47c5a","toSide":"bottom"},
+		{"id":"a10927254b3b7123","fromNode":"54d8262a327319cd","fromSide":"right","toNode":"341611b4fae47c5a","toSide":"left"},
+		{"id":"5acf62a2f10e0de0","fromNode":"c4aeeddd7163a634","fromSide":"top","toNode":"8f0386cf71325b16","toSide":"bottom"},
+		{"id":"2912d9eddc16005c","fromNode":"cdb1f0aba440d42f","fromSide":"right","toNode":"c4aeeddd7163a634","toSide":"left"}
+	]
+}
