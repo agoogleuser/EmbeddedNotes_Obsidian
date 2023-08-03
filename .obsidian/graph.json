@@ -1,11 +1,11 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
-  "showOrphans": true,
-  "collapse-color-groups": false,
+  "showOrphans": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:#Pre-Processing",
@@ -20,6 +20,20 @@
         "a": 1,
         "rgb": 2151757
       }
+    },
+    {
+      "query": "path:Linker",
+      "color": {
+        "a": 1,
+        "rgb": 5526240
+      }
+    },
+    {
+      "query": "tag:#Assembler",
+      "color": {
+        "a": 1,
+        "rgb": 10882076
+      }
     }
   ],
   "collapse-display": true,
@@ -28,10 +42,10 @@
   "nodeSizeMultiplier": 1.9375,
   "lineSizeMultiplier": 3.06041666666667,
   "collapse-forces": false,
-  "centerStrength": 0.53125,
-  "repelStrength": 11.875,
+  "centerStrength": 0.208333333333333,
+  "repelStrength": 12.3958333333333,
   "linkStrength": 1,
-  "linkDistance": 162,
-  "scale": 1.0000000000000016,
-  "close": false
+  "linkDistance": 245,
+  "scale": 0.7132754626224446,
+  "close": true
 }
