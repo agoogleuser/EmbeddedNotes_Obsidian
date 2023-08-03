@@ -15,8 +15,8 @@
               "state": {
                 "file": "Compiler Canvas.canvas",
                 "viewState": {
-                  "x": -353.9604367804563,
-                  "y": 311.0844026070106,
+                  "x": 300.0602528747162,
+                  "y": 807.3257819173555,
                   "zoom": -1.3475679160454619
                 }
               }
@@ -179,6 +179,15 @@
   },
   "active": "f5eb1c70460195a3",
   "lastOpenFiles": [
+    "Other Resources/Pasted image 20230802213523.png",
+    "Other Resources/Operators.md",
+    "Other Resources/Obsidian_Canvas_1.png",
+    "Other Resources",
+    "Other_Resources/Pasted image 20230802213523.png",
+    "Other_Resources/Operators.md",
+    "Other_Resources/Obsidian_Canvas_1.png",
+    "Other_Resources",
+    "Other Resources/Obsidian_Canval_1.png",
     "Memory Sections.canvas",
     "README.md",
     "New Text Document.txt",
@@ -197,15 +206,12 @@
     "Compiler/Tokenizer.md",
     "PreProcessor/PreProcessing.md",
     "Linker",
-    "Other Resources/Operators.md",
-    "Other Resources/Pasted image 20230802213523.png",
     "Assembler",
     "Untitled 1.canvas",
     "2023-08-02.md",
     "PreProcessor/Pre-Processing Errors.md",
     "PreProcessor/Pre-Processing-Directives.md",
     "Pre-Processing.md",
-    "Other Resources",
     "Compiler",
     "PreProcessor"
   ]
