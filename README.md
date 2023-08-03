@@ -6,7 +6,7 @@ It's a free note taking application that uses "md-like" syntax to write notes, t
 
 It can be easier than a plain notebook, as it requires way less effort to connect your information on Obsidian than in a notebook, as you have to section your notebook and number each page and section/chapter carefully, and it's not very dynamic as Obsidian here, therefore I decided to write most of my notes here as they are a variety of subjects to write about that can be linked with a thin thread, even the in-between the lines, as long as you simply tag them :D
 
-![Graph View Example](Other%20Resources/Obsidian_Graph_view.png)
+![Graph View Example](Other%20Resources/Obsidian_Graph_View.png)
 
 There is also a new feature added called *Canvas* where you spread your notes as you like and connect them as you like, i found this better in my opinion.
 
