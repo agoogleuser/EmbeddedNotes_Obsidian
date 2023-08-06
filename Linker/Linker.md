@@ -3,4 +3,4 @@ The Linker is mainly two parts, the first , and the next step
 1. [[Object Verification]]  : checks the validity of object files
 2. [[Output Generation]] : links all the object files to build the project.
 
-Tags: #Linker
+Tags: #PrimaryTrack 

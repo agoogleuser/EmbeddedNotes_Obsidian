@@ -10,3 +10,5 @@ It consists from 6 parts, that are divided into two parts, the front end, and th
 6- [[Symbol Table Generator]]
 
 The Final Output of this process is the assembly code  for the target.`file.asm`, which is forwarded to the next step : [[Assembler]]. Additionally, in the last stage, a temporary files are made for the Symbol Table Generator that is required by the linking process at the end of building the project.
+
+#PrimaryTrack 

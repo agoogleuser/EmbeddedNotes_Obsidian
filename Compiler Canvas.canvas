@@ -1,9 +1,8 @@
 {
 	"nodes":[
 		{"type":"file","file":"PreProcessor/PreProcessing.md","id":"c4aeeddd7163a634","x":-880,"y":-203,"width":800,"height":453},
-		{"type":"file","file":"Compiler/Compiler.md","id":"54d8262a327319cd","x":520,"y":137,"width":740,"height":743},
 		{"type":"file","file":"PreProcessor/Pre-Processing-Directives.md","id":"8edfc6c210df7a37","x":-1440,"y":500,"width":500,"height":760},
-		{"type":"file","file":"Assembler/Assembler.md","id":"341611b4fae47c5a","x":1860,"y":250,"width":680,"height":370},
+		{"type":"file","file":"Assembler/Assembler.md","id":"341611b4fae47c5a","x":1860,"y":250,"width":680,"height":490},
 		{"type":"file","file":"PreProcessor/Pre-Processing Errors.md","id":"f66547a7499b1ab7","x":-600,"y":435,"width":640,"height":460},
 		{"type":"file","file":"Compiler/Tokenizer.md","id":"5b8758f74e96cf44","x":-660,"y":1060,"width":580,"height":640},
 		{"type":"file","file":"Compiler/Temporary Generator.md","id":"bbcadaf31672903f","x":800,"y":1140,"width":600,"height":640},
@@ -11,8 +10,13 @@
 		{"type":"file","file":"Compiler/Optimizer.md","id":"d25ae1a4a2530565","x":2200,"y":1140,"width":560,"height":560,"color":"6"},
 		{"type":"file","file":"Compiler/Symbol Table Generator.md","id":"0c6fe8d2e3fc76bc","x":2880,"y":1070,"width":840,"height":730},
 		{"type":"text","text":"# Intermediate File\nThis is the output of the pre-processing step in the compilation process, where it , in simpler terms, combines the source and header files of the source code (`file.c`, `file.h`) and the output is `file.i`\n\n","id":"8f0386cf71325b16","x":-740,"y":-860,"width":600,"height":380},
-		{"type":"text","text":"# Source Files\nWhen writing a project, it will eventually contain a group of `.c` files and a group of `.h` files. These are the logic of the code that will eventually be executed on the target machine.\n","id":"cdb1f0aba440d42f","x":-2184,"y":-224,"width":424,"height":304},
-		{"type":"file","file":"Compiler/Syntax Tree.md","id":"60dc6f1ac61d8943","x":40,"y":1100,"width":600,"height":680}
+		{"type":"file","file":"Compiler/Syntax Tree.md","id":"60dc6f1ac61d8943","x":40,"y":1100,"width":600,"height":680},
+		{"type":"text","text":"# Source Files\nWhen writing a project, it will eventually contain a group of `.c` files and a group of `.h` files. These are the logic of the code that will eventually be executed on the target machine.\n","id":"cdb1f0aba440d42f","x":-1614,"y":-280,"width":424,"height":304},
+		{"type":"file","file":"Linker/Output Generation.md","id":"6e575521d4725b6c","x":4320,"y":235,"width":400,"height":185},
+		{"type":"file","file":"Compiler/Compiler.md","id":"54d8262a327319cd","x":520,"y":64,"width":740,"height":831},
+		{"type":"file","file":"Linker/Object Verification.md","id":"4ee6c31831bce3d8","x":3262,"y":500,"width":880,"height":465},
+		{"type":"file","file":"Linker/Linker.md","id":"f3c0ded09e77114b","x":2940,"y":-263,"width":520,"height":423},
+		{"id":"7118a6a247a45fd1","x":5060,"y":-494,"width":596,"height":463,"type":"text","text":"## Output\nThe output is `file.hex` or `file.exe` depending on your compiler and target.\n\nThis is the combined, optimized code that came out of the linker after linking all of the object files and other first party and third party libraries included in the project.\n\n**THIS is the file that will be executed.**"}
 	],
 	"edges":[
 		{"id":"097f9d7f61b38a46","fromNode":"c4aeeddd7163a634","fromSide":"bottom","toNode":"8edfc6c210df7a37","toSide":"top"},
@@ -31,6 +35,12 @@
 		{"id":"14706911ea9b0ae6","fromNode":"0c6fe8d2e3fc76bc","fromSide":"top","toNode":"341611b4fae47c5a","toSide":"bottom"},
 		{"id":"a10927254b3b7123","fromNode":"54d8262a327319cd","fromSide":"right","toNode":"341611b4fae47c5a","toSide":"left"},
 		{"id":"5acf62a2f10e0de0","fromNode":"c4aeeddd7163a634","fromSide":"top","toNode":"8f0386cf71325b16","toSide":"bottom"},
-		{"id":"2912d9eddc16005c","fromNode":"cdb1f0aba440d42f","fromSide":"right","toNode":"c4aeeddd7163a634","toSide":"left"}
+		{"id":"2912d9eddc16005c","fromNode":"cdb1f0aba440d42f","fromSide":"right","toNode":"c4aeeddd7163a634","toSide":"left"},
+		{"id":"81fe3db83454ab27","fromNode":"341611b4fae47c5a","fromSide":"right","toNode":"f3c0ded09e77114b","toSide":"left"},
+		{"id":"3fff0c7a31fc1f0c","fromNode":"f3c0ded09e77114b","fromSide":"bottom","toNode":"4ee6c31831bce3d8","toSide":"top"},
+		{"id":"f342de746c545159","fromNode":"4ee6c31831bce3d8","fromSide":"right","toNode":"6e575521d4725b6c","toSide":"left"},
+		{"id":"fe9a0d18b32761b1","fromNode":"f3c0ded09e77114b","fromSide":"right","toNode":"7118a6a247a45fd1","toSide":"left"},
+		{"id":"cb7ed467735c1440","fromNode":"f3c0ded09e77114b","fromSide":"bottom","toNode":"6e575521d4725b6c","toSide":"top"},
+		{"id":"3fb41e8ed20c6ebb","fromNode":"6e575521d4725b6c","fromSide":"right","toNode":"7118a6a247a45fd1","toSide":"bottom"}
 	]
 }

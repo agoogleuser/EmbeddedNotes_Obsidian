@@ -8,11 +8,32 @@
         "type": "tabs",
         "children": [
           {
+            "id": "c7104a18398c1973",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Memory Sections.canvas",
+                "viewState": {
+                  "x": 57.369282468794836,
+                  "y": 857.9785248730225,
+                  "zoom": -1.6666666666666663
+                }
+              },
+              "pinned": true
+            }
+          },
+          {
             "id": "b07704e7455bc18f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Linker/Linker.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -28,21 +49,37 @@
             }
           },
           {
-            "id": "c7104a18398c1973",
+            "id": "fec6f78ddf403b7d",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Memory Sections.canvas",
                 "viewState": {
-                  "x": -160.95568083422438,
-                  "y": 1268.6246109214876,
-                  "zoom": -1
+                  "x": 1665.7442368933453,
+                  "y": 1364.4833031926248,
+                  "zoom": -0.3333333333333334
+                }
+              }
+            }
+          },
+          {
+            "id": "c69d4e94878865f7",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Compiler Canvas.canvas",
+                "viewState": {
+                  "x": 1972.5366675794621,
+                  "y": 938.9819505717726,
+                  "zoom": -2.8110195229884156
                 }
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -108,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Compiler Canvas.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Compiler Canvas.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Compiler Canvas.canvas"
+              }
             }
           }
         ]
@@ -166,24 +207,30 @@
       "publish:Publish changes...": true
     }
   },
-  "active": "b07704e7455bc18f",
+  "active": "c69d4e94878865f7",
   "lastOpenFiles": [
-    "Compiler/Optimizer.md",
-    "Linker/Linker.md",
-    "Assembler/Assembler.md",
-    "Other Resources/Obsidian_Graph_View.png",
-    "Memory Sections in C.md",
-    "Linker/Object Verification.md",
-    "Linker/Output Generation.md",
     "Memory Sections.canvas",
-    "Compiler Canvas.canvas",
-    "README.md",
-    "PreProcessor/PreProcessing.md",
-    "Compiler/Compiler.md",
-    "2023-08-03.md",
+    "Memory Sections in C.md",
+    "Untitled.md",
     "Other Resources/Pasted image 20230802213523.png",
-    "Other Resources/Operators.md",
+    "README.md",
+    "Compiler Canvas.canvas",
+    "Other Resources/Obsidian_Graph_View.png",
     "Other Resources/Obsidian_Canvas_1.png",
+    "Other Resources/Operators.md",
+    "Linker/Output Generation.md",
+    "Linker/Object Verification.md",
+    "Linker/Linker.md",
+    "Compiler/Symbol Table Generator.md",
+    "Compiler/Optimizer.md",
+    "Compiler/Target Generator.md",
+    "Compiler/Temporary Generator.md",
+    "Compiler/Syntax Tree.md",
+    "Compiler/Tokenizer.md",
+    "Compiler/Compiler.md",
+    "Assembler/Assembler.md",
+    "PreProcessor/PreProcessing.md",
+    "2023-08-03.md",
     "Other Resources",
     "Other_Resources/Pasted image 20230802213523.png",
     "Other_Resources/Operators.md",
@@ -193,11 +240,6 @@
     "New Text Document.txt",
     "LICENSE",
     "LICENSE.txt",
-    "Compiler/Symbol Table Generator.md",
-    "Compiler/Target Generator.md",
-    "Compiler/Temporary Generator.md",
-    "Compiler/Syntax Tree.md",
-    "Compiler/Tokenizer.md",
     "Linker",
     "Assembler",
     "Untitled 1.canvas",

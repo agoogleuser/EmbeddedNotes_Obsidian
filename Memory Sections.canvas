@@ -1,12 +1,48 @@
 {
 	"nodes":[
-		{"type":"text","text":"# Linker\nIn any hex file that will be burned into a microcontroller, the memory is divided into multiple Sections\n\nThe Common/ Standard Sections are:\n1.  .bss \n\t\tShort for \"Block Starting Symbol\"\n\t\tIt holds all un uninitialized global and static variables (needed)\n2. .data\n\t\tIt holds all initialised static and global variables (Provided)\n3. .rodata\n\t\tShort for \"Read-Only Data\"\n\t\tAll Constant variables that are defined are stored here.\n1. .text\n\t\tStores the logical code like loop, if conditions, operations, calling of functions, but not the ones that declares or defines a variable.\t \n\nSections are characterised by\n- Name\n- Data Type inside it\n- Size\n- Address Range\n\nThese sections are arranged using the ***Linker Script***\n\n","id":"2475e2001ae43d4c","x":-567,"y":-203,"width":591,"height":1043,"color":"1"},
-		{"id":"837112ac6eeb4de4","x":-567,"y":920,"width":591,"height":720,"type":"text","text":"# Linker Script\nA Script that  Describes the sections in the memory.\nThere is a default sections, and they also can be modified.\n\n```ld\nSECTION\n{\n\tHamada  = .(0x4000)\n\t\n\t.\n\t.\n\t.\n}\nDATA\n\tHamada = {...,...,...,...};\n\t\t// These dots are the type of data that will be saved inside Hamada.\n\t\n\t.\n\t.\n\t.\n}\n```"},
-		{"id":"d01ab95e9b479ec2","x":-1360,"y":1270,"width":591,"height":370,"type":"text","text":"# But Why we divide the memory into section in the first place ?\n"}
+		{"type":"text","text":"# Linker Script\nA Script that  Describes the sections in the memory.\nThere is a default sections, and they also can be modified.\n\n```ld\nSECTION\n{\n\tHamada  = .(0x4000)\n\t\n\t.\n\t.\n\t.\n}\nDATA\n\tHamada = {...,...,...,...};\n\t\t// These dots are the type of data that will be saved inside Hamada.\n\t\n\t.\n\t.\n\t.\n}\n```","id":"837112ac6eeb4de4","x":-880,"y":1260,"width":591,"height":720},
+		{"type":"text","text":"# Memory Sections\nIn any hex file that will be burned into a microcontroller, the memory is divided into multiple Sections\n\nThe Common/ Standard Sections are:\n1.  **.bss** \n\t\tShort for \"Block Starting Symbol\"\n\t\tIt holds all un uninitialized global and static variables (needed)\n\t\tIt's now more known as \"Better save space\".\n1. **.data**\n\t\tIt holds all initialised static and global variables (Provided)\n3. **.rodata**\n\t\tShort for \"Read-Only Data\"\n\t\tAll Constant variables that are defined are stored here.\n1. **.text**\n\t\tStores the logical code like loop, if conditions, operations, calling of functions, but not the ones that declares or defines a variable.\t \n\nSections are characterised by\n- Name\n- Data Type inside it\n- Size\n- Address Range\n\nThese sections are arranged using the ***Linker Script***\n\n","id":"2475e2001ae43d4c","x":-880,"y":120,"width":591,"height":1080,"color":"1"},
+		{"type":"text","text":"# Why Divide the Memory Into sections ?\nMemory sections have two types:\n1. **Loadable section:** where  the data is loaded from the secondary storage (Flash Memory), into the Primary storage (RAM)\n\t\tLoadable sections by default includes:\n\t\t- .bss\n\t\t- .data\n2. **Allocatable Section:** It is non-changing data that was put onto the program, which includes\n\t\t- .rodata (the constants)\n\t\t- .text (the program code)\n----\n","id":"0e7690e07300cba6","x":-40,"y":120,"width":1240,"height":440},
+		{"type":"text","text":"## Notes:\nMemory is primary memory (RAM) and secondary Memory (FLASH).\nAll the memory sections exists in the FLASH when burning the program, when the program starts, it is loaded into RAM.\nRAM is directly controllable by the CPU.","id":"a201f1229f29ceb2","x":-40,"y":740,"width":400,"height":420,"color":"4"},
+		{"type":"text","text":"# Default sections\nEach Object file provided from the assembler is by default is divided into sections.","id":"f6159e6ae78de236","x":-40,"y":1200,"width":400,"height":220},
+		{"type":"text","text":"# How Memory sections looks on FLASH and RAM","id":"c30f6f503ef18f47","x":1455,"y":445,"width":839,"height":60},
+		{"type":"text","text":"# FLASH","id":"46740628e241fdd0","x":1455,"y":585,"width":250,"height":50},
+		{"type":"text","text":"# RAM","id":"e2385b7b191ae710","x":2057,"y":585,"width":250,"height":60},
+		{"type":"text","text":".init","id":"e7f05d5d5cd1923a","x":1485,"y":685,"width":190,"height":55},
+		{"type":"text","text":".bss","id":"bef134cb7e713263","x":2098,"y":685,"width":167,"height":155},
+		{"type":"text","text":".bss","id":"4d3fdf8c7215dbc4","x":1485,"y":770,"width":190,"height":50},
+		{"type":"text","text":".data","id":"7f3b7015ed306b8c","x":1485,"y":840,"width":190,"height":130},
+		{"type":"text","text":".data","id":"4b387f79200c4819","x":2099,"y":860,"width":167,"height":130},
+		{"type":"text","text":".rodata","id":"331d286ac309db3c","x":1485,"y":990,"width":190,"height":50},
+		{"type":"text","text":"Stack\n.\n.\n.\nHeap","id":"bd7f9843cbc3ed89","x":2099,"y":1005,"width":167,"height":220},
+		{"type":"text","text":".text","id":"6bbb8e26b5abba81","x":1485,"y":1065,"width":190,"height":160},
+		{"type":"text","text":"An instruction to allocate ## bytes in RAM for uninitialized data","id":"e0564d81a44bea2a","x":1325,"y":1315,"width":260,"height":170},
+		{"type":"text","text":"# Start-up Code\n.init contains the start-up instructions, which has the following responsibilities\n\n1. Load data from Flash into RAM.\n2. Allocate space to .bss in RAM, and *optionally*, set all the data to a certain value like 0.\n3. (optional) Write ISR (Interrupt service routines) addresses into Dynamic Vector Table*","id":"a6f499eac9e41b56","x":940,"y":795,"width":427,"height":440},
+		{"type":"text","text":"# Vector Table\nThere are two types of vector tables, \n1. **Static:** the ISR Table is stored onto flash, so it only wrote once by the burner.\n2. **Dynamic:** The ISR is written onto RAM during the booting of the microcontroller.","id":"8cb897a88e085a5a","x":696,"y":1329,"width":458,"height":362},
+		{"type":"text","text":"# More on This section\nThe Stack section is used for local variables in each function and recursion things, \nin Embedded systems, only the stack exists as the heap is forbidden to use for both automotive solutions and space ","id":"95fb3121cecb50a5","x":1955,"y":1375,"width":620,"height":220}
 	],
 	"edges":[
 		{"id":"4f2a62658cfee277","fromNode":"2475e2001ae43d4c","fromSide":"bottom","toNode":"837112ac6eeb4de4","toSide":"top"},
-		{"id":"d1c7e50a959fe331","fromNode":"2475e2001ae43d4c","fromSide":"left","toNode":"d01ab95e9b479ec2","toSide":"top"},
-		{"id":"17ee0c6133a4541a","fromNode":"837112ac6eeb4de4","fromSide":"left","toNode":"d01ab95e9b479ec2","toSide":"top"}
+		{"id":"3401176d99e21834","fromNode":"2475e2001ae43d4c","fromSide":"right","toNode":"0e7690e07300cba6","toSide":"left"},
+		{"id":"89957654cf531f52","fromNode":"837112ac6eeb4de4","fromSide":"right","toNode":"0e7690e07300cba6","toSide":"left"},
+		{"id":"0275a8b864a42d83","fromNode":"4d3fdf8c7215dbc4","fromSide":"right","toNode":"bef134cb7e713263","toSide":"left"},
+		{"id":"f8993b692f2b20e5","fromNode":"4d3fdf8c7215dbc4","fromSide":"bottom","toNode":"7f3b7015ed306b8c","toSide":"top"},
+		{"id":"ec21dae84e1500f1","fromNode":"7f3b7015ed306b8c","fromSide":"bottom","toNode":"331d286ac309db3c","toSide":"top"},
+		{"id":"1ad092fe3772028b","fromNode":"331d286ac309db3c","fromSide":"bottom","toNode":"6bbb8e26b5abba81","toSide":"top"},
+		{"id":"1d3df87d9dc64847","fromNode":"4d3fdf8c7215dbc4","fromSide":"left","toNode":"e0564d81a44bea2a","toSide":"top"},
+		{"id":"4e4e84a7091c610c","fromNode":"e2385b7b191ae710","fromSide":"bottom","toNode":"bef134cb7e713263","toSide":"top"},
+		{"id":"a1f3d1a42ed6ec53","fromNode":"c30f6f503ef18f47","fromSide":"bottom","toNode":"46740628e241fdd0","toSide":"top"},
+		{"id":"089adaa3154046f4","fromNode":"c30f6f503ef18f47","fromSide":"bottom","toNode":"e2385b7b191ae710","toSide":"top"},
+		{"id":"9bb30a1ea949a073","fromNode":"bd7f9843cbc3ed89","fromSide":"right","toNode":"95fb3121cecb50a5","toSide":"top"},
+		{"id":"8289d00ca5777e41","fromNode":"e7f05d5d5cd1923a","fromSide":"bottom","toNode":"4d3fdf8c7215dbc4","toSide":"top"},
+		{"id":"ec74ae887dc9d114","fromNode":"bef134cb7e713263","fromSide":"bottom","toNode":"4b387f79200c4819","toSide":"top"},
+		{"id":"c9675434c8fc6275","fromNode":"4b387f79200c4819","fromSide":"bottom","toNode":"bd7f9843cbc3ed89","toSide":"top"},
+		{"id":"fc64477152af5533","fromNode":"46740628e241fdd0","fromSide":"bottom","toNode":"e7f05d5d5cd1923a","toSide":"top"},
+		{"id":"14ccefa9ef2c55ad","fromNode":"e7f05d5d5cd1923a","fromSide":"left","toNode":"a6f499eac9e41b56","toSide":"top"},
+		{"id":"9c69e038f24a848f","fromNode":"a6f499eac9e41b56","fromSide":"left","toNode":"8cb897a88e085a5a","toSide":"top"},
+		{"id":"f3fb553c2a35fef4","fromNode":"0e7690e07300cba6","fromSide":"bottom","toNode":"a201f1229f29ceb2","toSide":"top"},
+		{"id":"160e6a6df123b89d","fromNode":"a201f1229f29ceb2","fromSide":"bottom","toNode":"f6159e6ae78de236","toSide":"top"},
+		{"id":"3d7c75506493f1a1","fromNode":"0e7690e07300cba6","fromSide":"right","toNode":"c30f6f503ef18f47","toSide":"top"},
+		{"id":"08a549cccd52ddd5","fromNode":"7f3b7015ed306b8c","fromSide":"right","toNode":"4b387f79200c4819","toSide":"left"}
 	]
 }
